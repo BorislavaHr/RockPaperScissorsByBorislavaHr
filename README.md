@@ -20,6 +20,6 @@ For this game I used if-else conditional statements and switch case statements t
   <img width="213" alt="invalid" src="https://user-images.githubusercontent.com/97604397/192329852-299aae61-d0d6-4525-99f8-65f6067f614e.PNG">
 </ul>
 
-*Source code: https://github.com/BorislavaHr/RockPaperScissorsByBorislavaHr/blob/6d1ff0997521a9a580fe6d8a8978286d70cafaad/rockPaperScissors.js
+*Source code: https://github.com/BorislavaHr/RockPaperScissorsByBorislavaHr/blob/6d1ff0997521a9a580fe6d8a8978286d70cafaad/rockPaperScissors.js <br>
 *Live demo: https://replit.com/@BorislavaHr/RockPaperScissors#index.js
 
