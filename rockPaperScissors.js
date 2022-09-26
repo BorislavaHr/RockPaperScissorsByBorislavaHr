@@ -1,5 +1,4 @@
 function rockPaperScissors(playerTurn) {
-
   const rock = "Rock";
   const paper = "Paper";
   const scissors = "Scissors";
@@ -15,37 +14,35 @@ function rockPaperScissors(playerTurn) {
   } else if (playerTurn == "s" || playerTurn == "scissors") {
     playerTurn = scissors;
   } else {
-    isInvalidArg = true; //check invalid argument
+    isInvalidArg = true;   //<--check for invalid argument
     console.log("Invalid input. Try again...");
   }
 
-  if (isInvalidArg != true) {  //<-- check invalid argument
+  if (isInvalidArg != true) {   //<-- check for invalid argument
     console.log(`You choose ${playerTurn}`);
   }
-
 
   // computer logic
   let computerRandomNum = Math.floor(Math.random() * 3) + 1;
 
-  switch (computerRandomNum) {
-    case 1:
-      computerRandomNum = rock;
-      break;
-    case 2:
-      computerRandomNum = paper;
-      break;
-    case 3:
-      computerRandomNum = scissors;
-      break;
-  }
-
-  if (isInvalidArg != true) {  //<-- check invalid argument
+  if (isInvalidArg != true) {   //<-- check for invalid argument
+    switch (computerRandomNum) {
+      case 1:
+        computerRandomNum = rock;
+        break;
+      case 2:
+        computerRandomNum = paper;
+        break;
+      case 3:
+        computerRandomNum = scissors;
+        break;
+    }
     console.log(`The computer chooses ${computerRandomNum}`);
   }
-
+  
 
   // win or lose logic
-  if (isInvalidArg != true) {  // <-- check invalid argument
+  if (isInvalidArg != true) {    // <-- check for invalid argument
     if (
       (computerRandomNum === rock && playerTurn === scissors) ||
       (computerRandomNum === scissors && playerTurn === paper) ||
@@ -64,4 +61,4 @@ function rockPaperScissors(playerTurn) {
   }
 }
 
-rockPaperScissors(4);
+rockPaperScissors("invalid argument");
